@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/myMainStyle.css">
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav class="mymenu">
+            <div class="nav-wrapper">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Pagrindinis</a></li>
+                    <li><a href="news.html">Naujienos</a></li>
+                    <li><a href="recommendations.html">Rekomendacijos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Pagrindinis</a></li>
+        <li><a href="news.html">Naujienos</a></li>
+        <li><a href="recommendations.html">Rekomendacijos</a></li>
+    </ul>
+
+    <h1>Partneriai</h1>
+    <div class="container">
+        <div class="row"></div>
+    </div>
+
+    <script src="js/partnersService.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+
+        makePartners();
+
+    </script>
+</body>
+
+</html>
